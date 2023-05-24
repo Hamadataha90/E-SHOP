@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-SHOP</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon"  / >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("ZbR1-qDbwQb2dBC_p");
+})();
+</script>
+
+
+    
+
+    
+</head>
+<body id="contact">
+
+  <div id="preloader"></div>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-2 fixed-top">
+<img src="images/logo.png" width="60px">  
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span ><i id="bar" class="fa-solid fa-bars"></i>  </span> </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      
+      <li class="nav-item">
+        <a class="nav-link " href="index.html" style="color: blue;">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="shop.html">Shop</a>
+    </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+    </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="contact.html">Contact Us</a>
+    </li>
+
+    <li class="nav-item row " >
+      <a class="nav-link " href="sign.html">Sign
+        <i class="fa-solid fa-house-user "  alt="SIGN" style="color: blue;"> </i>
+      </a>
+  </li>
+      
+      <li class="nav-item m-auto">
+        <i class="fa-solid fa-magnifying-glass" id="search-icon" ></i>
+
+    </li>
+
+    <div class="shopping-bag text-center ">
+      <i class="fa-solid fa-cart-shopping " id="cart-icon"></i>
+                <div class="total-items-in-cart">
+              0
+          </div>
+
+    <div class="search-box text-center">
+      <input type="search" name="" id="" placeholder="search here ....">
+
+    </div>
+      
+  </div>
+
+
+</nav>
+
+
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 mt-5">
+    <div class="container">
+      <div class="row">
+      <h2 class="col-md-8" style="color: red;">Contact Us</h2><br><br>
+      
+      <iframe
+      width="200"
+      height="250"
+      style="border:0"
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDY9KITvxYO5girv8avUC7dKVEmcME9NyE
+        &q=Panorama El Shorouk+El Shorouk+City,Cairo+Egypt"  class="col-md-4">
+    </iframe>
+  </div>
+
+
+      <form id="formm"  onsubmit="sendMail">
+        <div class="form-group ">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Enter your message" required></textarea>
+        </div>
+        <button    id="btnnn" type="submit" class="btn btn-primary">Submit</button><br><br>
+
+
+
+        <div class="form-group" style="color: rgb(243, 145, 16);">
+          OR You Can Chat with me Directly
+          <label for="message"> =>Whatsapp <i class="fa-brands fa-whatsapp fa-beat fa-l" style="color: #13f662;"></i></label>
+          <input type="tel" class="form-control" id="Whatsapp" rows="3" placeholder="  +201065489707 & +201224611621"> </input>
+        </div>
+      </form>
+
+
+      
+
+      
+
+
+     
+
+     
+    </div>
+  </section>
+  
+  <!-- Footer Section -->
+  <footer class="bg-dark text-white py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>Copyright © 2023 HAMADA. All rights reserved.  </p> 
+        </div>
+        <div class="text-center p-3 " >
+          <a class="text-red" href="#contact">Back to top</a>
+        </div>
+      </div>   
+    </div>
+    
+  
+  </footer>
+  
+
+
+  <div class="cart">
+    <h2 class="cart-title text-center">YOUR CART</h2>
+    <i class="fa-solid fa-xmark" id="cart-close"></i>
+    <div class="cart-header">
+        <div class="column1">Item</div>
+        <div class="column2">Unit price</div>
+        <div class="column3">Units</div>
+    </div>
+    <div class="cart-items">
+        <!-- render cart items here -->
+    </div>
+    
+    <div class="cart-footer">
+        <div class="subtotal">
+            Subtotal (0 items): $0
+        </div>
+        <div class="checkout">
+            <a href="sign.html" > Proceed to checkout </a>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src=" https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  function sendMail(){
+    Email.send({
+    SecureToken : " bb58cdd4-1636-4457-bfdb-cc94285cef97",
+    To : 'memotahaa92@gmail.com',
+    From : "memotahaa92@gmail.com",
+    Subject : "test",
+    Body : "name: "+ document.getElementById("name").value
+           + "<br> email: " + document.getElementById("email").value
+           + "<br> message: " + document.getElementById("message").value
+}).then(
+  message => alert("message sent successfull")
+);
+  }
+</script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>
