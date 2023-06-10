@@ -145,7 +145,7 @@ color: rgb(47, 33, 205);
     /* right: 0; */
     right: -100%;
 width: 350px;
-height: 90vh;
+height: 100vh;
 overflow-y: auto;
 overflow-x: hidden;
 padding: 20px;
@@ -691,9 +691,12 @@ form .i2:hover{
 
 .about{
  height: 100vh;
- overflow: hidden;
   color: white;
 }
+
+
+
+
 .about .us{
   margin-top: 70px;
 }

@@ -282,27 +282,27 @@ function changeNumberOfUnits(action, id) {
 
 
 
-let serviceId = 'service_38s70ec';
-let templateId = 'template_qhrxtwp';
-let btnSend = document.getElementById('btnnn');
+// let serviceId = 'service_38s70ec';
+// let templateId = 'template_qhrxtwp';
+// let btnSend = document.getElementById('btnnn');
 
-btnSend.onclick = () => {
+// btnSend.onclick = () => {
 
-  var params = {
-    name: document.getElementById('name').value,
-    reply_email: document.getElementById('mail').value,
-    message: document.getElementById('message').value
-  };
+//   var params = {
+//     name: document.getElementById('name').value,
+//     reply_email: document.getElementById('mail').value,
+//     message: document.getElementById('message').value
+//   };
   
-  emailjs.send(serviceId, templateId, params)
-  .then(function(response) {
-    alert("Message sent successfully!");
-  }, function(error) {
-    alert('FAILED...', error);
-  });
+//   emailjs.send(serviceId, templateId, params)
+//   .then(function(response) {
+//     alert("Message sent successfully!");
+//   }, function(error) {
+//     alert('FAILED...', error);
+//   });
 
 
-} 
+// } 
 
 
 
